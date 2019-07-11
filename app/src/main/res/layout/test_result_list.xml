@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:rowCount="5">
+
+    <TextView
+        android:id="@+id/webPageNameView"
+        android:layout_width="match_parent"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@android:color/holo_green_light"
+        android:text="Webpage" />
+    <TextView
+        android:layout_rowWeight="1"
+        android:layout_gravity="left|top"
+        android:paddingLeft="8dp"
+        android:text="Start:" />
+
+    <TextView
+        android:id="@+id/startTimeStampView"
+        android:layout_gravity="right|top"
+        android:paddingRight="8dp"
+        android:text="4" />
+
+    <TextView
+        android:layout_rowWeight="1"
+        android:layout_gravity="left|top"
+        android:paddingLeft="8dp"
+        android:text="Finish:" />
+
+    <TextView
+        android:id="@+id/finishTimeStampView"
+        android:layout_gravity="right|top"
+        android:paddingRight="8dp"
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/customTestParamLabelView1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="left|top"
+        android:paddingLeft="8dp"
+        android:text="Load time:" />
+
+    <TextView
+        android:id="@+id/customTestParamView1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="right|top"
+        android:paddingRight="8dp"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/customTestParamLabelView2"
+        android:layout_rowWeight="1"
+        android:layout_gravity="left|top"
+        android:paddingLeft="8dp"
+        android:text="Body size:" />
+
+    <TextView
+        android:id="@+id/customTestParamView2"
+        android:layout_gravity="right|top"
+        android:paddingRight="8dp"
+        android:text="1" />
+
+</GridLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/TestResultsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6" />
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/GridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="5"
+        tools:context=".GridXMLActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_columnSpan="2"
+            android:layout_rowWeight="1"
+            android:layout_gravity="left|top"
+            android:paddingLeft="8dp"
+            android:text="Summary"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_rowWeight="1"
+            android:layout_gravity="left|top"
+            android:paddingLeft="8dp"
+            android:text="Successfully loaded:" />
+
+        <TextView
+            android:id="@+id/successfulView"
+            android:layout_gravity="right|top"
+            android:paddingRight="8dp"
+            android:text="" />
+
+        <TextView
+            android:layout_rowWeight="1"
+            android:layout_gravity="left|top"
+            android:paddingLeft="8dp"
+            android:text="Not loaded successfully:" />
+
+        <TextView
+            android:id="@+id/unsuccesfulView"
+            android:layout_gravity="right|top"
+            android:paddingRight="8dp"
+            android:text="" />
+
+        <TextView
+            android:layout_rowWeight="1"
+            android:layout_gravity="left|top"
+            android:paddingLeft="8dp"
+            android:text="Fastest load:" />
+
+        <TextView
+            android:id="@+id/fastestView"
+            android:layout_rowWeight="1"
+            android:layout_gravity="right|top"
+            android:paddingRight="8dp"
+            android:text="" />
+
+        <TextView
+            android:layout_rowWeight="1"
+            android:layout_gravity="left|top"
+            android:paddingLeft="8dp"
+            android:text="Slowest load:" />
+
+        <TextView
+            android:id="@+id/slowestView"
+            android:layout_gravity="right|top"
+            android:paddingRight="8dp"
+            android:text="" />
+
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Start"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:background="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteY="659dp" />
+
+</LinearLayout>
